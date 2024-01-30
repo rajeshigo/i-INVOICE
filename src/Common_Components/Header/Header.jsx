@@ -2,7 +2,7 @@ import React from "react";
 import Userimage from '../../Assets/Images/profileImage.jpg';
 
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div className="h-[70px] px-[30px] flex items-center justify-between">
             <div className="cursor-pointer">
@@ -12,7 +12,7 @@ const Header = () => {
                     height="18"
                     viewBox="0 0 18 14"
                     fill="none"
-                // onClick={props.Changetoggle}
+                onClick={() => props.toggleChange(false)}
                 >
                     <rect width="18" height="2" fill="#8f9fbc" />
                     <rect y="6" width="18" height="2" fill="#8f9fbc" />
